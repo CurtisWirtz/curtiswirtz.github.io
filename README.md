@@ -1,2 +1,3 @@
 # curtiswirtz.github.io
-My portfolio.
+
+My lightweight static portfolio site.
