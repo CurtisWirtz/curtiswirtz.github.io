@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blurring:after {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%) !important;
+  filter: blur(14px);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testerz::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  /* The blur size should be anything below `0` so it will extend to the outside. */
+  inset: -100px 0px;
+  -webkit-backdrop-filter: blur(3px); /* Required for safari */
+  backdrop-filter: blur(3px);
+
+  /* A mask fades the blur effect, so it gets weaker. */
+  /* towards the edges, further from the container box. */
+  /* (The fill color is irrelevant, so "red" is used as it's the shortest color name.) */
+  mask: linear-gradient(to top, transparent 0%, red 100px calc(100% - 100px), transparent 100%);
+
+  /* This merges the masks above so only the overlapping pixels are rendered. */
+  /* This creates the illusion of a fade-out mask. */
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in; /* Required for Safari */
+}

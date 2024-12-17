@@ -1,6 +1,12 @@
 //testing
 console.log("test");
 
+/**
+ *
+ * Types
+ *
+ * */
+
 type Test = {
   test: string;
 };
