@@ -4,11 +4,10 @@
   "description": "Static portfolio site for Curtis Wirtz.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-css && npm run build-js && npm run minify-js",
-    "build-css": "npx tailwindcss build src/styles.css -o dist/styles.css",
-    "build-js": "tsc src/script.ts --outDir ./dist",
-    "minify-js": "terser dist/script.js -o dist/script.min.js",
-    "minify-css": "npx cssnano dist/styles.css > dist/styles.min.css"
+    "build": "npm run build-tw && npm run build-js && npm run minify-js",
+    "build-tw": "npx tailwindcss build src/styles.css -o dist/styles.css",
+    "minify-js": "terser dist/script.js -o script.min.js",
+    "minify-css": "npx cssnano dist/styles.css > styles.min.css"
   },
   "author": "Curtis Wirtz",
   "license": "MIT",
@@ -17,7 +16,6 @@
     "cssnano-cli": "^1.0.5",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
-    "terser": "^5.37.0",
-    "typescript": "^5.7.2"
+    "terser": "^5.37.0"
   }
 }
