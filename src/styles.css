@@ -13,7 +13,7 @@
   height: 100%;
 }
 
-.testerz::before {
+.nav-menu::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -32,4 +32,11 @@
   /* This creates the illusion of a fade-out mask. */
   mask-composite: intersect;
   -webkit-mask-composite: source-in; /* Required for Safari */
+}
+
+/* Typewriting effect */
+:root {
+  --bg-color: black;
+  --typewriterSpeed: 2s;
+  --typewriterCharacters: 31; /*15, 32 */
 }
