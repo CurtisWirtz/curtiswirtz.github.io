@@ -15,16 +15,34 @@
     <title>Curtis Wirtz - Web Development | Princeps Tech LLC</title>
   </head>
   <body class="bg-black text-white">
-    <div class="sticky z-10 inset-0">
-      <div class="testerz w-full">testing</div>
-    </div>
+    <header class="sticky z-10 inset-0">
+      <nav class="nav-menu absolute inset-0 w-full" aria-label="Navigation">
+        <ul class="flex w-full items-center px-4 py-3 uppercase tracking-widest" role="menubar" aria-label="Main Navigation">
+          <li role="menuitem">
+            <a class="flex flex-col justify-center" href="#about">
+              <img src="images/dark-logo.png" alt="Princeps Tech LLC Logo" />
+              <span class="mx-auto text-[14px] tracking-[0.5em]">Tech LLC</span>
+            </a>
+          </li>
+          <li role="menuitem" class="self-start ml-auto">
+            <a class="" href="#about">About Me</a>
+          </li>
+          <li role="menuitem" class="self-start ml-14">
+            <a class="" href="#Showcase">Showcase</a>
+          </li>
+          <li role="menuitem" class="self-start ml-14">
+            <a class="" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="home-hero min-h-[800px] flex flex-col justify-center items-center">
+    <section class="home-hero min-h-[800px] h-screen flex flex-col justify-center items-center">
       <img id="pixel-curtis" class="mx-auto" src="images/curtis.gif" alt="Pixelated and cartoonized image of Curtis" />
 
-      <div class="typewriter main-text">
+      <header class="typewriter main-text">
         <h1>Hi. I'm Curtis, a web developer.</h1>
-      </div>
+      </header>
     </section>
 
     <section>

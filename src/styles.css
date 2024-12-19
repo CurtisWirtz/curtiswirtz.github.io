@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.blurring:after {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%) !important;
-  filter: blur(14px);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  font-family: "Courier New", monospace;
+  color: #acddd8;
+  margin: 0;
 }
 
 .nav-menu::before {
@@ -19,14 +18,15 @@
   z-index: -1;
 
   /* The blur size should be anything below `0` so it will extend to the outside. */
-  inset: -100px 0px;
-  -webkit-backdrop-filter: blur(3px); /* Required for safari */
-  backdrop-filter: blur(3px);
+  inset: -125px 0px;
+  -webkit-backdrop-filter: blur(7.5px); /* Required for safari */
+  backdrop-filter: blur(7.5px);
 
   /* A mask fades the blur effect, so it gets weaker. */
   /* towards the edges, further from the container box. */
   /* (The fill color is irrelevant, so "red" is used as it's the shortest color name.) */
   mask: linear-gradient(to top, transparent 0%, red 100px calc(100% - 100px), transparent 100%);
+  background: linear-gradient(to bottom, black 25px, transparent 200%);
 
   /* This merges the masks above so only the overlapping pixels are rendered. */
   /* This creates the illusion of a fade-out mask. */
@@ -34,9 +34,66 @@
   -webkit-mask-composite: source-in; /* Required for Safari */
 }
 
+/* Positioning the hero image - slightly more built on the right side */
+#pixel-curtis {
+  transform: translateX(-3vw);
+}
+@media (max-width: 538px) {
+  #pixel-curtis {
+    transform: translateX(calc(11px - 11vw));
+  }
+}
+
 /* Typewriting effect */
 :root {
   --bg-color: black;
   --typewriterSpeed: 2s;
   --typewriterCharacters: 31; /*15, 32 */
+}
+.typewriter {
+  font-family: "Courier New", monospace;
+  color: #acddd8;
+  display: flex;
+  background: var(--bg-color);
+  justify-content: center;
+}
+.typewriter h1 {
+  font-size: clamp(1.5rem, 2rem, 2rem);
+  position: relative;
+  font-family: "Courier New", monospace;
+  width: max-content;
+}
+.typewriter h1::before,
+.typewriter h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.typewriter h1::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+.typewriter h1::after {
+  width: 0.125em;
+  background: #acddd8;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(15) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+.main-text {
+  transition: opacity 250ms;
+  max-width: 92vw;
+  position: relative;
+  bottom: 15vh;
 }
