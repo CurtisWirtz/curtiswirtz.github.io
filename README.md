@@ -1,2 +1,2 @@
 # curtiswirtz.github.io
-My static portfolio website. Generated using Jeckyll.
+My static portfolio website. Generated using Jekyll.
