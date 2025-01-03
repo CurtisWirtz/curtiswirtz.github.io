@@ -2,4 +2,4 @@
 
 My static portfolio website. Generated using Jekyll.
 
-Using Ruby version 3.3.4
+Ruby version 3.3.4
