@@ -5,19 +5,24 @@
   "main": "assets/js/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ts": "tsc"
+    "watch:css": "npx tailwindcss build --watch",
+    "build:ts": "tsc",
+    "build:tw": "npx tailwindcss build -i ./assets/css/styles.css -o ./assets/css/uncompressed.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CurtisWirtz/curtiswirtz.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Curtis Wirtz",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CurtisWirtz/curtiswirtz.github.io/issues"
   },
   "homepage": "https://github.com/CurtisWirtz/curtiswirtz.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"
   }
 }
