@@ -118,7 +118,7 @@ body {
   -webkit-animation-iteration-count: infinite;
   text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
-@-webkit-keyframes shine {
+@keyframes shine {
   0%,
   10% {
     background-position: -50px;
@@ -133,7 +133,7 @@ body {
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
 }
-@-webkit-keyframes blinker {
+@keyframes blinker {
   0% {
     opacity: 1;
   }
