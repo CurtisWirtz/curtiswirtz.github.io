@@ -1,12 +1,12 @@
-<section id="showcase" class="border-white border max-w-300 mx-auto pt-40 -md:px-4 px-6">
+<section id="showcase" class="max-w-300 mx-auto pt-40 -md:px-4 px-6">
   <header class="flex flex-col">
     <h1 class="uppercase">Showcase</h1>
     <p class="">I build websites and web apps. I have an eye for detail, I&apos;m proud to showcase</p>
   </header>
 
-  <ul class="border grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 gap-x-4 gap-y-10">
+  <ul class="grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 gap-x-4 gap-y-10">
     {% for project in page.projects %}
-    <li class="group col-span-1 flex flex-col">
+    <li class="group col-span-1 flex flex-col step">
       <a class="flex flex-col text-center" href="{{project.url}}" target="_blank" rel="noopener noreferrer">
         <h2 class="TEZT text-center text-pank">{{project.title}}</h2>
         <div class="relative overflow-hidden pixel-corners aspect-[5/3]">
