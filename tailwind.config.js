@@ -34,7 +34,7 @@ module.exports = {
       maxWidth: {
         300: "75rem" // 1200px
       },
-      minWidth: {
+      minHeight: {
         200: "50rem" // 800px
       }
     }
