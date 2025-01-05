@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  font-family: "Courier New", monospace;
+  color: #d1e4dd;
+}
+
+/* blur/darken anything that passes under the nav as we scroll */
+.nav-menu::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  /* The blur size should be anything below `0` so it will extend to the outside. */
+  inset: -95px 0px;
+  -webkit-backdrop-filter: blur(7.5px); /* Required for safari */
+  backdrop-filter: blur(7.5px);
+
+  /* A mask fades the blur effect, so it gets weaker. */
+  /* towards the edges, further from the container box. */
+  /* (The fill color is irrelevant, so "red" is used as it's the shortest color name.) */
+  mask: linear-gradient(to top, transparent 0%, red 140px calc(100% - 100px), transparent 100%);
+  background: linear-gradient(to bottom, black 25px, transparent 200%);
+
+  /* This merges the masks above so only the overlapping pixels are rendered. */
+  /* This creates the illusion of a fade-out mask. */
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in; /* Required for Safari */
+}
+@media (max-width: 767px) {
+  .nav-menu::before {
+    inset: -99px 0px -86px 0px;
+    mask: linear-gradient(to top, transparent 0%, red 127px calc(100% - 100px), transparent 100%);
+    background: linear-gradient(to bottom, black 25px, transparent 200%);
+  }
+}
+
+/* Positioning the hero image - slightly more built on the right side - Undesirable, but the real fix requires editing the gif file. This is far more simple */
+#pixel-curtis {
+  transform: translateX(-3vw);
+}
+@media (max-width: 767px) {
+  #pixel-curtis {
+    transform: translateX(calc(11px - 11vw));
+  }
+}
+
+/* Typewriting effect */
+:root {
+  --bg-color: black;
+  --typewriterSpeed: 2s;
+  --typewriterCharacters: 31; /*15, 32 */
+}
+.typewriter {
+  font-family: "Courier New", monospace;
+  color: #d1e4dd;
+  display: flex;
+  background: var(--bg-color);
+  justify-content: center;
+  transition: opacity 250ms;
+}
+.typewriter h1 {
+  font-size: clamp(1.5rem, 2rem, 2rem);
+  position: relative;
+  font-family: "Courier New", monospace;
+  width: max-content;
+}
+.typewriter h1::before,
+.typewriter h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.typewriter h1::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+.typewriter h1::after {
+  width: 0.125em;
+  background: #d1e4dd;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(15) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@media (max-width: 767px) {
+  .typewriter h1 {
+    font-size: calc(4.4vw - 1px);
+  }
+}
+
+/* Shiny effect on Showcase nav link */
+.shine {
+  font-size: 19px;
+  background: #666 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  -webkit-background-size: 50px;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 1.75s;
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+@-webkit-keyframes shine {
+  0%,
+  10% {
+    background-position: -50px;
+  }
+  100% {
+    background-position: 100px;
+  }
+}
+/* Blinking effect on About nav link */
+.blinker {
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Floating effect */
+.floating {
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animations on load and scroll */
+.pre-animated.step {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.step {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.75s ease-in-out, transform 1s ease-in-out;
+}
+/* Animation delays */
+@media (max-width: 767px) {
+  .animation__delay-short {
+    transition-delay: 0.2s;
+  }
+  .animation__delay-medium {
+    transition-delay: 0.4s;
+  }
+  .animation__delay-long {
+    transition-delay: 0.6s;
+  }
+}
+
+/* Pixelated Rounded corners - Big ups to Luke Bonaccorsi https://pixelcorners.lukeb.co.uk/ */
+.pixel-corners {
+  clip-path: polygon(0px calc(100% - 16px), 4px calc(100% - 16px), 4px calc(100% - 8px), 8px calc(100% - 8px), 8px calc(100% - 4px), 16px calc(100% - 4px), 16px 100%, calc(100% - 16px) 100%, calc(100% - 16px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 16px), 100% calc(100% - 16px), 100% 16px, calc(100% - 4px) 16px, calc(100% - 4px) 8px, calc(100% - 8px) 8px, calc(100% - 8px) 4px, calc(100% - 16px) 4px, calc(100% - 16px) 0px, 16px 0px, 16px 4px, 8px 4px, 8px 8px, 4px 8px, 4px 16px, 0px 16px);
+}
