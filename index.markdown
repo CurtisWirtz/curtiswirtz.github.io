@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-metatitle: Curtis Wirtz - Web Development
-metadescription: Hi. I'm Curtis, a web developer. I specialize in building websites and web applications using modern web technologies.
+meta_title: Curtis Wirtz - Web Development
+meta_description: Hi. I'm Curtis, a web developer. I specialize in building websites and web applications using modern web technologies.
 ---
