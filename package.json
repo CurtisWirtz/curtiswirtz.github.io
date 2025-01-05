@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:css": "npx tailwindcss build --watch",
     "build:ts": "tsc",
-    "build:tw": "npx tailwindcss build -i ./assets/css/styles.css -o ./assets/css/uncompressed.css"
+    "build:css": "postcss ./assets/css/main.css -o ./assets/css/styles.css",
+    "build:tw": "npx tailwindcss build -i ./assets/css/main.css -o ./assets/css/styles.css",
+    "dev": "concurrently \"npm run watch:css\" \"bundle exec jekyll serve --watch --livereload\""
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/CurtisWirtz/curtiswirtz.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"
