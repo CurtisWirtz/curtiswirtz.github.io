@@ -2,8 +2,10 @@
   "compilerOptions": {
     "target": "es5", // Or a more recent target if needed
     "module": "commonjs",
-    "outDir": "assets/js", // Output directory for compiled JavaScript
+    "outDir": "assets/js/dist", // Output directory for compiled JavaScript
     "sourceMap": true,
     "strict": true
-  }
+  },
+  "include": ["assets/js/**/*.ts"],
+  "exclude": ["node_modules"]
 }
