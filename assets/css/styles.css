@@ -959,12 +959,14 @@ h2 {
 .pre-animated.step {
   opacity: 0;
   transform: translateY(2rem);
+  filter: blur(15px);
 }
 
 .step {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.75s ease-in-out, transform 1s ease-in-out;
+  filter: blur(0);
+  transition: opacity 0s ease-in-out, transform 2s ease-in-out, filter 2s ease-in-out;
 }
 
 /* Animation delays */
