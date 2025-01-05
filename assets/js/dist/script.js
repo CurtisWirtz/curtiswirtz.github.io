@@ -12,15 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     var resetGif = function () {
         var gif = document.getElementById("pixel-curtis");
-        console.log(gif);
         if (gif) {
-            var src = gif.src;
+            var image_path = gif.src;
             var timeAndDateNumbers = generateNumber();
-            gif.src = "";
-            gif.src = src + ("?" + timeAndDateNumbers);
+            gif.src = image_path + ("?" + timeAndDateNumbers);
         }
     };
     resetGif();
-    console.log("testing");
+    console.log("testxxxxing");
 });
 //# sourceMappingURL=script.js.map

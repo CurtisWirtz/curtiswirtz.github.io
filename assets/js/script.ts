@@ -13,16 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const resetGif = () => {
-    const gif: HTMLElement | null = document.getElementById("pixel-curtis");
-    console.log(gif);
+    const gif: HTMLImageElement | null = document.getElementById("pixel-curtis") as HTMLImageElement;
     if (gif) {
-      const src: string = gif.src;
-      const timeAndDateNumbers: number = generateNumber();
-      gif.src = "";
-      gif.src = src + `?${timeAndDateNumbers}`;
+      const image_path: string = gif.src;
+      const timeAndDateNumbers: string = generateNumber();
+      gif.src = image_path + `?${timeAndDateNumbers}`;
     }
   };
   resetGif();
 
-  console.log("testing");
+  console.log("testxxxxing");
 });
