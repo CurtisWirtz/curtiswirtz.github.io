@@ -23,7 +23,7 @@ module.exports = {
     colors: {},
     extend: {
       fontFamily: {
-        playertwo: ["Press Start 2P"]
+        playertwo: ['"Press Start 2P"']
       },
       colors: {
         inherit: "inherit",
