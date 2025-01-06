@@ -5,11 +5,9 @@
   "main": "assets/js/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:css": "npx tailwindcss build --watch",
     "build:ts": "tsc",
-    "build:css": "postcss ./assets/css/main.css -o ./assets/css/styles.css",
-    "build:tw": "npx tailwindcss build -i ./assets/css/main.css -o ./assets/css/styles.css",
-    "dev": "concurrently \"npm run watch:css\" \"bundle exec jekyll serve --watch --livereload\""
+    "build:tw": "npx tailwindcss build -i ./assets/css/main.css -o ./assets/css/styles.css --watch",
+    "dev": "concurrently \"npm run build:tw\" \"bundle exec jekyll serve --watch --livereload\""
   },
   "repository": {
     "type": "git",
