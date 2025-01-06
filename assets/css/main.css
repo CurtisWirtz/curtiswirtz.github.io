@@ -16,11 +16,6 @@ body {
   color: #d1e4dd;
 }
 
-h2 {
-  font-family: "Press Start 2P";
-  font-size: 36px;
-}
-
 /* blur/darken anything that passes under the nav as we scroll */
 .nav-menu::before {
   content: "";
@@ -117,10 +112,10 @@ h2 {
 
 /* Shiny effect on Showcase nav link */
 .shine {
-  font-size: 19px;
+  font-size: 16px;
   background: #666 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
   background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-  -webkit-background-size: 50px;
+  -webkit-background-size: 100px;
   color: rgba(255, 255, 255, 0.3);
   -webkit-background-clip: text;
   -webkit-animation-name: shine;
@@ -136,6 +131,12 @@ h2 {
   100% {
     background-position: 100px;
   }
+}
+.match {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+  -webkit-background-clip: text;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
 /* Blinking effect on About nav link */
 .blinker {
@@ -180,7 +181,7 @@ h2 {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out, filter 0.75s ease-in-out;
 }
 
 /* Animation delays */
