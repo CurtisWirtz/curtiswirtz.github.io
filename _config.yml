@@ -32,8 +32,6 @@ plugins:
 watch:
   scripts:
     - "npm run build:ts"
-    # - "npm run build:css"
-    - "npm run watch:css"
     # Add the following line to watch for changes in the JavaScript directory
     - "assets/js/**/*"
 # Exclude from processing.
