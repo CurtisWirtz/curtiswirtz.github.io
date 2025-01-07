@@ -40,7 +40,8 @@ module.exports = {
         h3: fontSizeClamp(1.75, 2.75), // 28px - 44px
         h4: fontSizeClamp(1.25, 1.5), // 20px - 24px
         h5: fontSizeClamp(1.25, 1.5), // 20px - 24px
-        body: fontSizeClamp(1, 1.125) // 16px - 18px
+        body: fontSizeClamp(1, 1.125), // 16px - 18px
+        micro: fontSizeClamp(0.75, 0.875) // 12px - 14px
       },
       colors: {
         inherit: "inherit",
