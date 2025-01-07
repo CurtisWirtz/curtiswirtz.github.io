@@ -138,6 +138,25 @@ body {
   -webkit-background-clip: text;
   text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
+/* Shiny effect on LARGE font */
+.shine.realbig {
+  font-size: clamp(1.75rem, calc(3 * 1.25vw), 3rem);
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  -webkit-background-size: 400px;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: text;
+  -webkit-animation: shine 4s linear infinite; /* Increase animation duration */
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
+}
+@keyframes shinebig {
+  0% {
+    background-position: -400px;
+  }
+  100% {
+    background-position: 400px;
+  }
+}
+
 /* Blinking effect on About nav link */
 .blinker {
   -webkit-animation-name: blinker;
@@ -177,7 +196,18 @@ body {
   transform: translateY(2rem);
   filter: blur(15px);
 }
+.pre-animated.step .substep {
+  opacity: 0;
+  transform: translateY(2rem);
+  filter: blur(15px);
+}
 .step {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+}
+.step .substep {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
@@ -185,16 +215,14 @@ body {
 }
 
 /* Animation delays */
-@media (max-width: 767px) {
-  .animation__delay-short {
-    transition-delay: 0.2s;
-  }
-  .animation__delay-medium {
-    transition-delay: 0.4s;
-  }
-  .animation__delay-long {
-    transition-delay: 0.6s;
-  }
+.substep.animation__delay-short {
+  transition-delay: 0.2s;
+}
+.substep.animation__delay-medium {
+  transition-delay: 0.4s;
+}
+.substep.animation__delay-long {
+  transition-delay: 0.6s;
 }
 
 /* Pixelated Rounded corners - Big ups to Luke Bonaccorsi https://pixelcorners.lukeb.co.uk/ */
@@ -205,4 +233,58 @@ body {
 /* Alternate image and content order in projects section */
 .project:nth-child(odd) > div:first-child {
   order: 2;
+}
+
+.marquee {
+  --gap: 0rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+}
+.marquee__content {
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* Fade to black on X edges of marquee */
+.bg-gradient-to-r {
+  opacity: 1;
+  width: 10%;
+}
+
+.bg-gradient-to-l {
+  opacity: 1;
+  width: 10%;
+}
+
+/* Project Image zoom */
+.zooms {
+  animation: zooms 10s ease-in-out infinite;
+}
+
+@keyframes zooms {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (gif) {
             var image_path = gif.src;
             var timeAndDateNumbers = generateNumber();
-            gif.src = image_path + ("?" + timeAndDateNumbers);
+            gif.src = image_path + "?".concat(timeAndDateNumbers);
         }
     };
     resetGif();

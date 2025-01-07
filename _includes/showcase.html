@@ -1,19 +1,44 @@
-<section id="showcase" class="max-w-300 mx-auto pt-40 -md:px-4 px-6">
-  <header class="flex flex-col">
-    <h1 class="uppercase">Showcase</h1>
+<section id="showcase" class="flex flex-col max-w-400 mx-auto pt-40 -md:px-3 px-6">
+  <header class="flex flex-col justify-center">
+    <h1 class="uppercase shine realbig">Showcase</h1>
     <p class="">I build websites and web apps. I have an eye for detail, I&apos;m proud to showcase</p>
   </header>
 
-  <ul class="grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 gap-x-4 gap-y-10">
-    {% for project in page.projects %}
-    <li class="group col-span-1 flex flex-col step">
-      <a class="flex flex-col text-center" href="{{project.url}}" target="_blank" rel="noopener noreferrer">
-        <h2 class="TEZT text-center text-pank">{{project.title}}</h2>
-        <div class="relative overflow-hidden pixel-corners aspect-[5/3]">
-          <img class="absolute w-full h-full z-0 inset-0 object-cover group-hover:scale-105 transition-all duration-1000 ease-in-out" src="{{project.image}}" alt="Screenshot of the {{project.title}} website." />
+  {% for project in page.projects %}
+  <article class="step project flex mb-2 md:mb-40">
+    <div class="-xl:w-2/5 xl:w-1/2 relative overflow-hidden pixel-corners aspect-[5/3]">
+      <img class="zooms absolute w-full h-full z-0 inset-0 object-cover" src="{{project.image}}" alt="Screenshot of the {{project.title}} website." />
+    </div>
+    <div class="-xl:w-3/5 xl:w-1/2 relative">
+      <div class="max-w-lg mx-auto flex flex-col justify-center h-full z-10">
+        <h2 class="substep">{{project.title}}</h2>
+
+        <div class="substep animation__delay-short marquee relative flex text-micro font-bold">
+          <ul class="marquee__content">
+            {% for tech in project.tech %}
+            <li class="px-3 pt-1.5 pb-1 whitespace-pre mr-4">{{ tech }}</li>
+            {% endfor %}
+          </ul>
+          <ul class="marquee__content" aria-hidden="true">
+            {% for tech in project.tech %}
+            <li class="px-3 pt-1.5 pb-1 whitespace-pre mr-4">{{ tech }}</li>
+            {% endfor %}
+          </ul>
+          <div class="absolute top-0 right-0 bottom-0 bg-gradient-to-r from-transparent to-black"></div>
+          <div class="absolute top-0 left-0 bottom-0 bg-gradient-to-l from-transparent to-black"></div>
         </div>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+
+        <p class="substep animation__delay-medium">{{project.description}}</p>
+
+        <a class="substep animation__delay-long font-body flex group hover:text-pank font-playertwo transition-all duration-300" href="{{project.url}}" target="_blank" rel="noopener noreferrer">
+          <span class="mr-3">View Project</span>
+
+          <svg class="group-hover:translate-x-2 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="28">
+            <polygon class="group-hover:fill-pank transition-all duration-300" fill="#d1e4dd" points="1,5 5,5 5,7 6,7 6,6 7,6 7,5 8,5 8,4 7,4 7,3 6,3 6,2 5,2 5,4 1,4" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
 </section>
