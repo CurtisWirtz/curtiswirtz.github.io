@@ -36,7 +36,7 @@ module.exports = {
     extend: {
       fontSize: {
         h1: fontSizeClamp(1.75, 3), // 28px - 48px
-        h2: fontSizeClamp(1.25, 1.625), // 20px - 32px
+        h2: fontSizeClamp(1.5, 1.625), // 24px - 32px
         h3: fontSizeClamp(1.75, 2.75), // 28px - 44px
         h4: fontSizeClamp(1.25, 1.5), // 20px - 24px
         h5: fontSizeClamp(1.25, 1.5), // 20px - 24px
@@ -67,6 +67,9 @@ module.exports = {
     require("@tailwindcss/typography"),
     plugin(function ({ addBase, theme }) {
       addBase({
+        body: {
+          fontSize: theme("fontSize.body")
+        },
         "h1, .h1": {
           fontFamily: theme("fontFamily.playertwo"),
           fontWeight: theme("fontWeight.medium"),
