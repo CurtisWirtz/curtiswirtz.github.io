@@ -1,9 +1,9 @@
 // Scroll triggered animations: simple intersection observer
-const animationDriver = () => {
+const animationDriver = (): void => {
   // console.log('animation driver ran');
   const items = document.querySelectorAll(".step");
 
-  const callback = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
+  const callback = (entries: IntersectionObserverEntry[], observer: IntersectionObserver): void => {
     // console.log('callback ran');
     entries.forEach((entry) => {
       if (entry.isIntersecting && entry.target.classList.contains("pre-animated")) {
@@ -22,7 +22,7 @@ const animationDriver = () => {
     threshold: 0
   });
 
-  const observeItems = (items: NodeListOf<Element>) => {
+  const observeItems = (items: NodeListOf<Element>): void => {
     items.forEach((item) => {
       item.classList.add("pre-animated");
       animationObserver.observe(item);
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return result;
   }
 
-  const resetGif = () => {
+  const resetGif = (): void => {
     const gif: HTMLImageElement | null = document.getElementById("pixel-curtis") as HTMLImageElement;
     if (gif) {
       const image_path: string = gif.src;
