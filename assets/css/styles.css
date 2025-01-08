@@ -555,7 +555,7 @@ video {
 }
 
 body {
-  font-size: clamp(1rem, 1.40625vw, 1.125rem);
+  font-size: clamp(1rem, 1.5625vw, 1.25rem);
 }
 
 h1, .h1 {
@@ -568,7 +568,7 @@ h1, .h1 {
 h2, .h2 {
   font-family: "Press Start 2P";
   font-weight: 500;
-  font-size: clamp(1.5rem, 2.03125vw, 1.625rem);
+  font-size: clamp(1.5rem, 2.8125vw, 2.25rem);
   line-height: 1.15;
 }
 
@@ -664,6 +664,18 @@ h5, .h5 {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .ml-auto {
@@ -801,6 +813,10 @@ h5, .h5 {
   padding-top: 10rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-playertwo {
   font-family: "Press Start 2P";
 }
@@ -814,11 +830,7 @@ h5, .h5 {
 }
 
 .text-micro {
-  font-size: clamp(0.75rem, 1.09375vw, 0.875rem);
-}
-
-.font-bold {
-  font-weight: 700;
+  font-size: clamp(0.875rem, 1.25vw, 1rem);
 }
 
 .uppercase {
@@ -1006,26 +1018,20 @@ body {
   text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
 
-/* Shiny effect on LARGE font */
-
-.shine.realbig {
-  font-size: clamp(1.75rem, calc(3 * 1.25vw), 3rem);
-  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-  -webkit-background-size: 400px;
-  color: rgba(255, 255, 255, 0.3);
+.shinebig {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #d1e4dd, #ef7ef7, #d1e4dd);
   -webkit-background-clip: text;
-  -webkit-animation: shine 4s linear infinite;
-  /* Increase animation duration */
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
+  backgrtound-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -100px;
+  -webkit-animation: gradientText 2s infinite alternate-reverse;
 }
 
-@keyframes shinebig {
-  0% {
-    background-position: -400px;
-  }
-
-  100% {
-    background-position: 400px;
+@keyframes gradientText {
+  to {
+    background-position: 100%;
   }
 }
 
@@ -1085,28 +1091,28 @@ body {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 .step .substep {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 /* Animation delays */
 
 .substep.animation__delay-short {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .substep.animation__delay-medium {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 
 .substep.animation__delay-long {
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
 }
 
 /* Pixelated Rounded corners - Big ups to Luke Bonaccorsi https://pixelcorners.lukeb.co.uk/ */
