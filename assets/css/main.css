@@ -138,22 +138,21 @@ body {
   -webkit-background-clip: text;
   text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
-/* Shiny effect on LARGE font */
-.shine.realbig {
-  font-size: clamp(1.75rem, calc(3 * 1.25vw), 3rem);
-  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-  -webkit-background-size: 400px;
-  color: rgba(255, 255, 255, 0.3);
+.shinebig {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #d1e4dd, #ef7ef7, #d1e4dd);
   -webkit-background-clip: text;
-  -webkit-animation: shine 4s linear infinite; /* Increase animation duration */
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
+  backgrtound-clip: text;
+  color: transparent;
+
+  background-size: 300%;
+  background-position: -100px;
+
+  -webkit-animation: gradientText 2s infinite alternate-reverse;
 }
-@keyframes shinebig {
-  0% {
-    background-position: -400px;
-  }
-  100% {
-    background-position: 400px;
+@keyframes gradientText {
+  to {
+    background-position: 100%;
   }
 }
 
