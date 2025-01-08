@@ -36,12 +36,12 @@ module.exports = {
     extend: {
       fontSize: {
         h1: fontSizeClamp(1.75, 3), // 28px - 48px
-        h2: fontSizeClamp(1.5, 1.625), // 24px - 32px
+        h2: fontSizeClamp(1.5, 2.25), // 24px - 36px
         h3: fontSizeClamp(1.75, 2.75), // 28px - 44px
         h4: fontSizeClamp(1.25, 1.5), // 20px - 24px
         h5: fontSizeClamp(1.25, 1.5), // 20px - 24px
-        body: fontSizeClamp(1, 1.125), // 16px - 18px
-        micro: fontSizeClamp(0.75, 0.875) // 12px - 14px
+        body: fontSizeClamp(1, 1.25), // 16px - 20px
+        micro: fontSizeClamp(0.875, 1) // 12px - 14px
       },
       colors: {
         inherit: "inherit",
