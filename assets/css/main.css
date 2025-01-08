@@ -140,7 +140,7 @@ body {
 }
 .shinebig {
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #d1e4dd, #ef7ef7, #d1e4dd);
+  background-image: linear-gradient(to right, #d1e4dd, #ef7ef7);
   -webkit-background-clip: text;
   backgrtound-clip: text;
   color: transparent;
