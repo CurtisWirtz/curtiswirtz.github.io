@@ -31,7 +31,8 @@ module.exports = {
       "3xl": "2000px"
     },
     fontFamily: {
-      playertwo: ['"Press Start 2P"']
+      playertwo: ['"Press Start 2P"'],
+      sharetech: ['"Share Tech"']
     },
     extend: {
       fontSize: {

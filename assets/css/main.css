@@ -6,13 +6,17 @@
   font-family: "Press Start 2P";
   src: url("../fonts/PressStart2P-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Share Tech";
+  src: url("../fonts/ShareTechMono-Regular.ttf") format("truetype");
+}
 
 html {
   scroll-behavior: smooth;
 }
 body {
   background-color: black;
-  font-family: "Courier New", monospace;
+  font-family: "Share Tech";
   color: #d1e4dd;
 }
 
