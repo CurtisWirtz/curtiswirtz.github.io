@@ -64,6 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (secondLine) {
     setTimeout(() => {
       secondLine.style.opacity = "1";
-    }, 2500);
+    }, 1500);
   }
 });

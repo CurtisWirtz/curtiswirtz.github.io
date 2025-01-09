@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (secondLine) {
         setTimeout(function () {
             secondLine.style.opacity = "1";
-        }, 2500);
+        }, 1500);
     }
 });
 //# sourceMappingURL=script.js.map

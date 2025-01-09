@@ -1,20 +1,23 @@
 <section id="showcase" class="flex flex-col max-w-400 mx-auto pt-40 -md:px-3 px-6">
-  <header class="flex flex-col justify-center">
-    <h1 class="shinebig">Showcase</h1>
-    <p class="">I build websites and web apps. I have an eye for detail, I&apos;m proud to showcase</p>
+  <header class="step flex flex-col justify-center items-center md:mb-40">
+    <h1 class="shinebig mb-7">Showcase</h1>
+    <p class="substep animation__delay-short">I build websites and web apps. I have an eye for detail, I&apos;m proud to showcase</p>
   </header>
 
   {% for project in page.projects %}
-  <article class="step project flex mb-2 md:mb-40">
-    <div class="-xl:w-2/5 xl:w-1/2 relative overflow-hidden pixel-corners aspect-[5/3]">
+  <article class="step project flex -md:flex-col -md:mb-20 mb-40">
+    {% if project.title %}
+    <h2 class="substep mb-5 mx-auto text-center md:hidden">{{project.title}}</h2>
+    {% endif %}
+    <div class="-md:max-w-lg -md:mx-auto -md:mb-3 w-full md:w-2/5 lg:w-1/2 relative overflow-hidden pixel-corners aspect-[5/3]">
       <img class="zooms absolute w-full h-full z-0 inset-0 object-cover" src="{{project.image}}" alt="Screenshot of the {{project.title}} website." />
     </div>
-    <div class="-xl:w-3/5 xl:w-1/2 relative">
+    <div class="w-full md:w-3/5 lg:w-1/2 relative px-6">
       <div class="max-w-lg mx-auto flex flex-col justify-center h-full z-10 text-center">
         {% if project.title %}
-        <h2 class="substep mb-3.5">{{project.title}}</h2>
+        <h2 class="substep mb-3.5 -md:hidden">{{project.title}}</h2>
         {% endif %} {% if project.tech %}
-        <div class="substep animation__delay-short marquee relative flex text-micro mb-5">
+        <div class="substep animation__delay-short marquee relative flex text-micro -md:mb-2.5 mb-5">
           <ul class="marquee__content">
             {% for tech in project.tech %}
             <li class="px-3 pt-1.5 pb-1 whitespace-pre mr-4">{{ tech }}</li>
@@ -29,7 +32,7 @@
           <div class="absolute top-0 left-0 bottom-0 bg-gradient-to-l from-transparent to-black"></div>
         </div>
         {% endif %} {% if project.description %}
-        <p class="substep animation__delay-medium mb-7">{{project.description}}</p>
+        <p class="substep animation__delay-medium -md:mb-5 mb-7">{{project.description}}</p>
         {% endif %} {% if project.url %}
         <a class="substep animation__delay-long font-body flex group hover:text-pank font-playertwo transition-all duration-300 w-full justify-center" href="{{project.url}}" target="_blank" rel="noopener noreferrer">
           <span class="mr-3">View Project</span>

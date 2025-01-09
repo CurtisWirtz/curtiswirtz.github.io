@@ -63,12 +63,11 @@ body {
 /* Typewriting effect */
 :root {
   --bg-color: black;
-  --typewriterSpeed: 1.5s;
+  --typewriterSpeed: 1s;
   --typewriterCharacters: 15;
 }
 
 .typewriter {
-  /* font-family: "Courier New", monospace; */
   font-family: "Press Start 2P";
 
   color: #d1e4dd;
@@ -81,7 +80,6 @@ body {
 .typewriter h1 {
   font-size: clamp(1.5rem, 2rem, 2rem);
   position: relative;
-  /* font-family: "Courier New", monospace; */
   font-family: "Press Start 2P";
   white-space: pre-wrap; /* Preserve line breaks */
   width: max-content;
@@ -99,25 +97,25 @@ body {
 
 .typewriter h1::before {
   background: var(--bg-color);
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 0.5s forwards;
 }
 
 .typewriter h1::after {
   width: 0.125em;
   background: #d1e4dd;
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(15) infinite;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 0.5s forwards, blink 750ms steps(15) infinite;
 }
 /* For multiple lines: */
 .typewriter.typewriter-delay h1::before {
   /* add delay to the animation*/
   animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 
 .typewriter.typewriter-delay h1::after {
   /* add delay to the animation*/
   animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards, blink 750ms steps(15) infinite;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 
 @keyframes typewriter {
@@ -257,9 +255,11 @@ body {
   clip-path: polygon(0px calc(100% - 16px), 4px calc(100% - 16px), 4px calc(100% - 8px), 8px calc(100% - 8px), 8px calc(100% - 4px), 16px calc(100% - 4px), 16px 100%, calc(100% - 16px) 100%, calc(100% - 16px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 16px), 100% calc(100% - 16px), 100% 16px, calc(100% - 4px) 16px, calc(100% - 4px) 8px, calc(100% - 8px) 8px, calc(100% - 8px) 4px, calc(100% - 16px) 4px, calc(100% - 16px) 0px, 16px 0px, 16px 4px, 8px 4px, 8px 8px, 4px 8px, 4px 16px, 0px 16px);
 }
 
-/* Alternate image and content order in projects section */
-.project:nth-child(odd) > div:first-child {
-  order: 2;
+/* Alternate image and content order in projects section, but not on mobile widths */
+@media (min-width: 768px) {
+  .project:nth-child(odd) > div:first-child {
+    order: 2;
+  }
 }
 
 .marquee {
