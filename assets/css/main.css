@@ -256,8 +256,8 @@ body {
 }
 
 /* Alternate image and content order in projects section, but not on mobile widths */
-@media (min-width: 768px) {
-  .project:nth-child(odd) > div:first-child {
+@media (min-width: 767px) {
+  .project:nth-child(odd) > div:nth-child(2) {
     order: 2;
   }
 }
