@@ -9,7 +9,7 @@ meta_description: Hi. I'm Curtis, a web developer.
 
 projects:
   - title: "Sigma Design"
-    description: "This website reflects the rigor and expertise of a rising engineering firm. Built in the spirit of engineering, by using a cutting-edge stack."
+    description: "A website on par with the expertise of a rising engineering firm. Built in the spirit of engineering, using a cutting-edge stack."
     tech:
       - "Node.js"
       - "Typescript"
