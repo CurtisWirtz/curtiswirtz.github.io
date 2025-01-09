@@ -57,4 +57,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // trigger scroll entry animations
   animationDriver();
+
+  // Hide second typewriter line until first line animation completes
+  const secondLine: HTMLElement | null = document.getElementById("second-line");
+  console.log(secondLine);
+  if (secondLine) {
+    setTimeout(() => {
+      secondLine.style.opacity = "1";
+    }, 2500);
+  }
 });

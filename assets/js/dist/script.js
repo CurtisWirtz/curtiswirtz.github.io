@@ -42,11 +42,19 @@ document.addEventListener("DOMContentLoaded", function () {
         if (gif) {
             var image_path = gif.src;
             var timeAndDateNumbers = generateNumber();
-            gif.src = image_path + "?".concat(timeAndDateNumbers);
+            gif.src = image_path + ("?" + timeAndDateNumbers);
         }
     };
     resetGif();
     // trigger scroll entry animations
     animationDriver();
+    // Hide second typewriter line until first line animation completes
+    var secondLine = document.getElementById("second-line");
+    console.log(secondLine);
+    if (secondLine) {
+        setTimeout(function () {
+            secondLine.style.opacity = "1";
+        }, 2500);
+    }
 });
 //# sourceMappingURL=script.js.map

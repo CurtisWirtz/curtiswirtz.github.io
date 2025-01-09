@@ -59,23 +59,30 @@ body {
 /* Typewriting effect */
 :root {
   --bg-color: black;
-  --typewriterSpeed: 2s;
-  --typewriterCharacters: 31; /*15, 32 */
+  --typewriterSpeed: 1.5s;
+  --typewriterCharacters: 15;
 }
+
 .typewriter {
-  font-family: "Courier New", monospace;
+  /* font-family: "Courier New", monospace; */
+  font-family: "Press Start 2P";
+
   color: #d1e4dd;
   display: flex;
   background: var(--bg-color);
   justify-content: center;
   transition: opacity 250ms;
 }
+
 .typewriter h1 {
   font-size: clamp(1.5rem, 2rem, 2rem);
   position: relative;
-  font-family: "Courier New", monospace;
+  /* font-family: "Courier New", monospace; */
+  font-family: "Press Start 2P";
+  white-space: pre-wrap; /* Preserve line breaks */
   width: max-content;
 }
+
 .typewriter h1::before,
 .typewriter h1::after {
   content: "";
@@ -85,28 +92,45 @@ body {
   bottom: 0;
   left: 0;
 }
+
 .typewriter h1::before {
   background: var(--bg-color);
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
+
 .typewriter h1::after {
   width: 0.125em;
   background: #d1e4dd;
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(15) infinite;
 }
+/* For multiple lines: */
+.typewriter.typewriter-delay h1::before {
+  /* add delay to the animation*/
+  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;
+  animation-delay: 2.5s;
+}
+
+.typewriter.typewriter-delay h1::after {
+  /* add delay to the animation*/
+  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards, blink 750ms steps(15) infinite;
+  animation-delay: 2.5s;
+}
+
 @keyframes typewriter {
   to {
     left: 100%;
   }
 }
+
 @keyframes blink {
   to {
     background: transparent;
   }
 }
+
 @media (max-width: 767px) {
   .typewriter h1 {
-    font-size: calc(4.4vw - 1px);
+    font-size: 5.4vw;
   }
 }
 
