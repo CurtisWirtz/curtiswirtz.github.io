@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
-    const scrollPercentage = scrollPosition / (documentHeight - windowHeight);
+    const scrollPercentage = scrollPosition / (documentHeight - windowHeight) / 2; // The last number we divide it by slows how quickly the haze appears
 
     const fadeElements = document.querySelectorAll<HTMLElement>(".scroll-fade");
 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (index === 1) {
         maxOpacity = 0.25;
       } else if (index === 2) {
-        maxOpacity = 0.8;
+        maxOpacity = 0.5;
       } else if (index === 3) {
         maxOpacity = 0.75;
       }

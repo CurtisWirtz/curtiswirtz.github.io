@@ -605,6 +605,10 @@ h5, .h5 {
   border-width: 0;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .absolute {
   position: absolute;
 }
@@ -621,24 +625,40 @@ h5, .h5 {
   inset: 0px;
 }
 
-.-bottom-\[200px\] {
-  bottom: -200px;
+.-bottom-\[240px\] {
+  bottom: -240px;
 }
 
-.-bottom-\[252px\] {
-  bottom: -252px;
-}
-
-.-bottom-\[280px\] {
-  bottom: -280px;
+.-bottom-\[300px\] {
+  bottom: -300px;
 }
 
 .-bottom-\[440px\] {
   bottom: -440px;
 }
 
-.-left-\[200px\] {
-  left: -200px;
+.-left-\[240px\] {
+  left: -240px;
+}
+
+.-left-\[260px\] {
+  left: -260px;
+}
+
+.-top-\[260px\] {
+  top: -260px;
+}
+
+.-top-\[300px\] {
+  top: -300px;
+}
+
+.-top-\[500px\] {
+  top: -500px;
+}
+
+.-top-\[68px\] {
+  top: -68px;
 }
 
 .bottom-0 {
@@ -691,6 +711,10 @@ h5, .h5 {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-auto {
@@ -808,6 +832,16 @@ h5, .h5 {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.rotate-\[-20deg\] {
+  --tw-rotate: -20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[-30deg\] {
+  --tw-rotate: -30deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-\[-32deg\] {
@@ -938,6 +972,10 @@ h5, .h5 {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-20 {
+  opacity: 0.2;
 }
 
 .opacity-25 {
@@ -1342,7 +1380,7 @@ body {
 
 .scroll-fade {
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 0ms ease-in-out;
 }
 
 .scroll-fade.active {
@@ -1377,6 +1415,10 @@ body {
     bottom: 10vh;
   }
 
+  .-sm\:-top-16 {
+    top: -4rem;
+  }
+
   .-sm\:hidden {
     display: none;
   }
@@ -1389,6 +1431,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .-md\:-top-16 {
+    top: -4rem;
+  }
+
   .-md\:right-6 {
     right: 1.5rem;
   }
@@ -1422,8 +1468,8 @@ body {
     display: none;
   }
 
-  .-md\:h-\[calc\(100vh-71px\)\] {
-    height: calc(100vh - 71px);
+  .-md\:h-\[calc\(100vh-64px\)\] {
+    height: calc(100vh - 64px);
   }
 
   .-md\:max-w-lg {
@@ -1453,8 +1499,12 @@ body {
     display: none;
   }
 
-  .md\:h-\[calc\(100vh-86px\)\] {
-    height: calc(100vh - 86px);
+  .md\:h-\[calc\(100vh-68px\)\] {
+    height: calc(100vh - 68px);
+  }
+
+  .md\:min-h-200 {
+    min-height: 50rem;
   }
 
   .md\:w-2\/5 {
