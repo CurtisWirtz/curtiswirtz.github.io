@@ -315,3 +315,7 @@ body {
     transform: scale(1);
   }
 }
+.ray-light {
+  background-color: #3166b480;
+  background: radial-gradient(ellipse closest-side at center, #83dd9e, #3166b480);
+}
