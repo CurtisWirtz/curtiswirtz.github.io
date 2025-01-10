@@ -669,8 +669,8 @@ h5, .h5 {
   bottom: 5rem;
 }
 
-.bottom-\[15vh\] {
-  bottom: 15vh;
+.bottom-\[20\%\] {
+  bottom: 20%;
 }
 
 .left-0 {
@@ -796,10 +796,6 @@ h5, .h5 {
 
 .h-screen {
   height: 100vh;
-}
-
-.min-h-200 {
-  min-height: 50rem;
 }
 
 .w-8 {
@@ -1235,16 +1231,16 @@ body {
 /* Floating effect */
 
 .floating {
-  animation: float 2s ease-in-out infinite;
+  animation: floating 2s ease-in-out infinite;
 }
 
-@keyframes float {
+@keyframes floating {
   0% {
     transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-12px);
   }
 
   100% {
@@ -1411,10 +1407,6 @@ body {
 }
 
 @media (max-width: 599px) {
-  .-sm\:bottom-\[10vh\] {
-    bottom: 10vh;
-  }
-
   .-sm\:-top-16 {
     top: -4rem;
   }
@@ -1431,8 +1423,24 @@ body {
 }
 
 @media (max-width: 767px) {
-  .-md\:-top-16 {
-    top: -4rem;
+  .-md\:-left-\[260px\] {
+    left: -260px;
+  }
+
+  .-md\:-top-\[260px\] {
+    top: -260px;
+  }
+
+  .-md\:-top-\[300px\] {
+    top: -300px;
+  }
+
+  .-md\:-top-\[400px\] {
+    top: -400px;
+  }
+
+  .-md\:bottom-6 {
+    bottom: 1.5rem;
   }
 
   .-md\:right-6 {
