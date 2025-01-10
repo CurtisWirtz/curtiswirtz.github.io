@@ -2,10 +2,14 @@
   <nav class="nav-menu w-full" aria-label="Navigation">
     <ul class="flex w-full items-center -md:px-3 px-6 py-3 uppercase text-[18px] tracking-widest" role="menubar" aria-label="Main Navigation">
       <li class="group" role="menuitem">
-        <a class="flex flex-col justify-center" href="/" aria-label="Home">
+        <a class="relative flex" href="/" aria-label="Home">
           <span class="sr-only">Home</span>
-          <image class="-md:max-w-28" src="/assets/images/dark-logo.png" alt="Princeps Tech LLC Logo" />
-          <span class="mx-auto text-[9px] md:text-[12px] tracking-[8px] md:tracking-[9px] -md:translate-x-0.5 translate-y-0.5 md:translate-y-1 group-hover:text-pank transition-text duration-300">Tech LLC</span>
+          <img class="-sm:hidden" src="/assets/images/curtis-logo.png" alt="Curtis Wirtz's initials icon." />
+          <img aria-hidden="true" class="-sm:hidden absolute inset-0 z-10 opacity-0 group-hover:opacity-100 trasition-all duration-500" src="/assets/images/curtis-logo-pink.png" alt="Curtis Wirtz's initials icon." />
+
+          <img class="sm:hidden" src="/assets/images/curtis-icon.png" alt="Pixelated 'Curtis' logo." />
+          <img aria-hidden="true" class="sm:hidden absolute inset-0 z-10 opacity-0 group-hover:opacity-100 trasition-all duration-500" src="/assets/images/curtis-icon-pink.png" alt="Pixelated 'Curtis' logo." />
+          <span aria-hidden="true" class="ml-1 font-micro group-hover:text-pank trasition-all duration-500">&#169;</span>
         </a>
       </li>
       <li role="menuitem" class="self-start ml-auto -md:mr-5 mr-16 mt-1.5">
