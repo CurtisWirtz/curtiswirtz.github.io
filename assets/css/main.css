@@ -315,7 +315,16 @@ body {
     transform: scale(1);
   }
 }
+/* background haze effect */
 .ray-light {
-  background-color: #3166b480;
-  background: radial-gradient(ellipse closest-side at center, #83dd9e, #3166b480);
+  background-color: #d1e4dd80;
+  background: radial-gradient(ellipse closest-side at center, #83dd9e, #d1e4dd80);
+}
+/* background haze effect appears as you scroll down */
+.scroll-fade {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.scroll-fade.active {
+  opacity: 1;
 }

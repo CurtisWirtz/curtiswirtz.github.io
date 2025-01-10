@@ -66,4 +66,31 @@ document.addEventListener("DOMContentLoaded", () => {
       secondLine.style.opacity = "1";
     }, 1500);
   }
+
+  /* background haze effect appears as you scroll down */
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrollPercentage = scrollPosition / (documentHeight - windowHeight);
+
+    const fadeElements = document.querySelectorAll<HTMLElement>(".scroll-fade");
+
+    fadeElements.forEach((element, index) => {
+      let maxOpacity = 1;
+
+      // maximum opacities
+      if (index === 0) {
+        maxOpacity = 0.4;
+      } else if (index === 1) {
+        maxOpacity = 0.25;
+      } else if (index === 2) {
+        maxOpacity = 0.8;
+      } else if (index === 3) {
+        maxOpacity = 0.75;
+      }
+
+      element.style.opacity = Math.min(scrollPercentage, maxOpacity).toString();
+    });
+  });
 });

@@ -621,6 +621,26 @@ h5, .h5 {
   inset: 0px;
 }
 
+.-bottom-\[200px\] {
+  bottom: -200px;
+}
+
+.-bottom-\[252px\] {
+  bottom: -252px;
+}
+
+.-bottom-\[280px\] {
+  bottom: -280px;
+}
+
+.-bottom-\[440px\] {
+  bottom: -440px;
+}
+
+.-left-\[200px\] {
+  left: -200px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -637,38 +657,6 @@ h5, .h5 {
   left: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.right-20 {
-  right: 5rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.-left-\[200px\] {
-  left: -200px;
-}
-
-.-top-\[200px\] {
-  top: -200px;
-}
-
-.-top-\[252px\] {
-  top: -252px;
-}
-
-.-top-\[280px\] {
-  top: -280px;
-}
-
-.-top-\[440px\] {
-  top: -440px;
-}
-
 .left-\[100px\] {
   left: 100px;
 }
@@ -681,60 +669,20 @@ h5, .h5 {
   left: 960px;
 }
 
-.bottom-\[200px\] {
-  bottom: 200px;
+.right-0 {
+  right: 0px;
 }
 
-.bottom-\[100px\] {
-  bottom: 100px;
+.right-20 {
+  right: 5rem;
 }
 
-.bottom-\[0px\] {
-  bottom: 0px;
+.top-0 {
+  top: 0px;
 }
 
-.-bottom-\[252px\] {
-  bottom: -252px;
-}
-
-.-bottom-\[200px\] {
-  bottom: -200px;
-}
-
-.-bottom-\[440px\] {
-  bottom: -440px;
-}
-
-.-bottom-\[280px\] {
-  bottom: -280px;
-}
-
-.-bottom-\[152px\] {
-  bottom: -152px;
-}
-
-.left-\[340px\] {
-  left: 340px;
-}
-
-.-bottom-\[340px\] {
-  bottom: -340px;
-}
-
-.-bottom-\[640px\] {
-  bottom: -640px;
-}
-
-.-bottom-\[540px\] {
-  bottom: -540px;
-}
-
-.-bottom-\[180px\] {
-  bottom: -180px;
-}
-
-.-bottom-\[380px\] {
-  bottom: -380px;
+.-z-10 {
+  z-index: -10;
 }
 
 .z-0 {
@@ -743,14 +691,6 @@ h5, .h5 {
 
 .z-10 {
   z-index: 10;
-}
-
-.-z-10 {
-  z-index: -10;
-}
-
-.-z-0 {
-  z-index: 0;
 }
 
 .mx-auto {
@@ -810,10 +750,6 @@ h5, .h5 {
   height: 2rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[267px\] {
   height: 267px;
 }
@@ -830,6 +766,10 @@ h5, .h5 {
   height: 492px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -842,16 +782,16 @@ h5, .h5 {
   width: 2rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[1192px\] {
   width: 1192px;
 }
 
 .w-\[1758px\] {
   width: 1758px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-screen {
@@ -862,17 +802,12 @@ h5, .h5 {
   max-width: 100rem;
 }
 
-.max-w-lg {
-  max-width: 32rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
 
-.rotate-\[-20deg\] {
-  --tw-rotate: -20deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .rotate-\[-32deg\] {
@@ -880,8 +815,8 @@ h5, .h5 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.rotate-\[40deg\] {
-  --tw-rotate: 40deg;
+.rotate-\[-40deg\] {
+  --tw-rotate: -40deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -892,11 +827,6 @@ h5, .h5 {
 
 .rotate-\[32deg\] {
   --tw-rotate: 32deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[-40deg\] {
-  --tw-rotate: -40deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1010,12 +940,12 @@ h5, .h5 {
   opacity: 0;
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
 .opacity-25 {
   opacity: 0.25;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .opacity-75 {
@@ -1401,9 +1331,22 @@ body {
   }
 }
 
+/* background haze effect */
+
 .ray-light {
-  background-color: #3166b480;
-  background: radial-gradient(ellipse closest-side at center, #83dd9e, #3166b480);
+  background-color: #d1e4dd80;
+  background: radial-gradient(ellipse closest-side at center, #83dd9e, #d1e4dd80);
+}
+
+/* background haze effect appears as you scroll down */
+
+.scroll-fade {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.scroll-fade.active {
+  opacity: 1;
 }
 
 .hover\:text-pank:hover {
@@ -1520,10 +1463,6 @@ body {
 
   .md\:w-3\/5 {
     width: 60%;
-  }
-
-  .md\:opacity-40 {
-    opacity: 0.4;
   }
 }
 
