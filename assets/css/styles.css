@@ -734,10 +734,6 @@ h5, .h5 {
   margin-bottom: 10rem;
 }
 
-.mb-44 {
-  margin-bottom: 11rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -840,6 +836,14 @@ h5, .h5 {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .rotate-\[-20deg\] {
