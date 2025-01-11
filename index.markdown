@@ -21,7 +21,7 @@ projects:
     image: "/assets/images/sigmadesign.jpeg"
     url: "https://www.sigmadzn.com/"
   - title: "Scratch & Peck Feeds"
-    description: "Farm animal feed e-commerce with slick on-brand styling. Integrated fulfillment services, wholesale freight shipments, discount programs, and analytics to scale."
+    description: "Farm animal feed e-commerce with slick on-brand styling. Integrates automated orders, wholesale freight shipments, discount programs, and analytics to scale."
     tech:
       - "WordPress"
       - "PHP"
@@ -53,7 +53,7 @@ projects:
     image: "/assets/images/whokilledmia.jpeg"
     url: "https://www.whokilledmia.com/"
   - title: "Hemingway Land Company"
-    description: "An interface for selling remote parcels of land. Beautiful geographical-based design utilizing Leaflet."
+    description: "An interface for buying and selling remote parcels of land. Geographical map navigation and design. Emphasis on beautiful photography, thus image optimization is key."
     tech:
       - "11ty"
       - "Nunjucks"
