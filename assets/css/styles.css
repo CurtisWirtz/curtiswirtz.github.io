@@ -762,6 +762,18 @@ h5, .h5 {
   margin-top: 0.375rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.-mt-0 {
+  margin-top: -0px;
+}
+
+.-mt-40 {
+  margin-top: -10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -940,6 +952,10 @@ h5, .h5 {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
 }
 
 .text-center {
@@ -1508,6 +1524,18 @@ body {
     margin-right: 1.25rem;
   }
 
+  .-md\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .-md\:-mt-0 {
+    margin-top: -0px;
+  }
+
+  .-md\:-mt-20 {
+    margin-top: -5rem;
+  }
+
   .-md\:hidden {
     display: none;
   }
@@ -1531,6 +1559,10 @@ body {
 
   .-md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .-md\:pt-40 {
+    padding-top: 10rem;
   }
 
   .-md\:text-\[12px\] {
