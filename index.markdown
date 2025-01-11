@@ -4,7 +4,7 @@
 
 layout: default
 
-meta_title: Curtis Wirtz - Web Development
+meta_title: Curtis Wirtz | Web Development
 meta_description: Hi. I'm Curtis, a web developer.
 
 projects:

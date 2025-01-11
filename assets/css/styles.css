@@ -1459,6 +1459,14 @@ body {
     bottom: 4rem;
   }
 
+  .-md\:-left-\[365px\] {
+    left: -365px;
+  }
+
+  .-md\:-left-\[60px\] {
+    left: -60px;
+  }
+
   .-md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
