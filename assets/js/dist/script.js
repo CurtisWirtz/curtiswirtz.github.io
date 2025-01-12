@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (gif) {
             var image_path = gif.src;
             var timeAndDateNumbers = generateNumber();
-            gif.src = image_path + ("?" + timeAndDateNumbers);
+            gif.src = image_path + "?".concat(timeAndDateNumbers);
         }
     };
     resetGif();
@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     animationDriver();
     // Hide second typewriter line until first line animation completes
     var secondLine = document.getElementById("second-line");
-    console.log(secondLine);
     if (secondLine) {
         setTimeout(function () {
             secondLine.style.opacity = "1";
@@ -81,5 +80,18 @@ document.addEventListener("DOMContentLoaded", function () {
             element.style.opacity = Math.min(scrollPercentage, maxOpacity).toString();
         });
     });
+    // Load the rest of the example Showcase projects when clicking the Load More button
+    var loadMoreProjectsButton = document.getElementById("loadMoreProjects");
+    var listItems = document.querySelectorAll(".list-group article");
+    console.log("hi");
+    if (loadMoreProjectsButton) {
+        loadMoreProjectsButton.addEventListener("click", function () {
+            listItems.forEach(function (item) {
+                item.classList.remove("hidden");
+            });
+            loadMoreProjectsButton.style.display = "none";
+        });
+        console.log("ran");
+    }
 });
 //# sourceMappingURL=script.js.map

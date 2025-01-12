@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Hide second typewriter line until first line animation completes
   const secondLine: HTMLElement | null = document.getElementById("second-line");
-  console.log(secondLine);
   if (secondLine) {
     setTimeout(() => {
       secondLine.style.opacity = "1";
@@ -93,4 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
       element.style.opacity = Math.min(scrollPercentage, maxOpacity).toString();
     });
   });
+
+  // Load the rest of the example Showcase projects when clicking the Load More button
+  const loadMoreProjectsButton: HTMLElement | null = document.getElementById("loadMoreProjects");
+  const listItems: NodeListOf<Element> | null = document.querySelectorAll(".list-group article");
+  console.log("hi");
+  if (loadMoreProjectsButton) {
+    loadMoreProjectsButton.addEventListener("click", () => {
+      listItems.forEach((item) => {
+        item.classList.remove("hidden");
+      });
+      loadMoreProjectsButton.style.display = "none";
+    });
+    console.log("ran");
+  }
 });
