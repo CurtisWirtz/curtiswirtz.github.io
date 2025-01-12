@@ -1582,6 +1582,11 @@ body {
   .md\:w-3\/5 {
     width: 60%;
   }
+
+  .md\:rotate-\[-40deg\] {
+    --tw-rotate: -40deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
 }
 
 @media (min-width: 1024px) {

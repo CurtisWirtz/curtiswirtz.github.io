@@ -323,7 +323,7 @@ body {
 /* background haze effect appears as you scroll down */
 .scroll-fade {
   opacity: 0;
-  transition: opacity 0ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 .scroll-fade.active {
   opacity: 1;
