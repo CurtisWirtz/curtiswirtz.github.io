@@ -1419,7 +1419,7 @@ body {
 
 .scroll-fade {
   opacity: 0;
-  transition: opacity 0ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 .scroll-fade.active {
