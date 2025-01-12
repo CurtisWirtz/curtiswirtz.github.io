@@ -77,7 +77,7 @@ projects:
     image: "/assets/images/compris.jpeg"
     url: "https://www.comprisvineyard.com/"
   - title: "Brown Hope"
-    description: "A grassroots non-profit to empower and uplift the BIPOC community of Portland. Vibrantly colored layouts bring a smile to my face."
+    description: "Vibrantly colored layouts that bring a smile to my face. Tailored to the inspiring work that they do."
     tech:
       - "Node.js"
       - "React"
