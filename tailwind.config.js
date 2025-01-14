@@ -38,9 +38,8 @@ module.exports = {
       fontSize: {
         h1: fontSizeClamp(1.75, 3), // 28px - 48px
         h2: fontSizeClamp(1.5, 2.25), // 24px - 36px
-        h3: fontSizeClamp(1.75, 2.75), // 28px - 44px
-        h4: fontSizeClamp(1.25, 1.5), // 20px - 24px
-        h5: fontSizeClamp(1.25, 1.5), // 20px - 24px
+        h3: fontSizeClamp(1.25, 2), // 20px - 32px
+
         body: fontSizeClamp(1, 1.25), // 16px - 20px
         micro: fontSizeClamp(0.875, 1) // 12px - 14px
       },
