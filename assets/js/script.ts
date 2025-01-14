@@ -96,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load the rest of the example Showcase projects when clicking the Load More button
   const loadMoreProjectsButton: HTMLElement | null = document.getElementById("loadMoreProjects");
   const listItems: NodeListOf<Element> | null = document.querySelectorAll(".list-group article");
-  console.log("hi");
   if (loadMoreProjectsButton) {
     loadMoreProjectsButton.addEventListener("click", () => {
       listItems.forEach((item) => {
@@ -104,6 +103,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       loadMoreProjectsButton.style.display = "none";
     });
-    console.log("ran");
   }
 });

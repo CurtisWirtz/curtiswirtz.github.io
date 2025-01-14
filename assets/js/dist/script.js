@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Load the rest of the example Showcase projects when clicking the Load More button
     var loadMoreProjectsButton = document.getElementById("loadMoreProjects");
     var listItems = document.querySelectorAll(".list-group article");
-    console.log("hi");
     if (loadMoreProjectsButton) {
         loadMoreProjectsButton.addEventListener("click", function () {
             listItems.forEach(function (item) {
@@ -91,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             loadMoreProjectsButton.style.display = "none";
         });
-        console.log("ran");
     }
 });
 //# sourceMappingURL=script.js.map
