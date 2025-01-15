@@ -12,5 +12,4 @@ In root directory: (Assuming all requirements are met for a Ruby and Node.js env
 2. `nvm use 18` (handles Node versions)
 3. `npm install` (install Node packages)
 4. `bundle install` (install Ruby packages)
-5. `bundle exec jekyll serve --livereload --watch` (Run local server!)
-6. Visit http://127.0.0.1:4000/ in the browser.
+5. `bundle exec jekyll serve --livereload --watch` (Run local server! It'll refresh on changes)
