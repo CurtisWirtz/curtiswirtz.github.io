@@ -1,6 +1,6 @@
-<footer class="flex flex-col w-full max-w-400 mx-auto -md:px-3 px-6 -md:mt-20 mt-40 pb-16">
-  <nav class="w-full grid grid-cols-3 gap-x-5">
-    <ul class="flex col-span-1 space-x-5">
+<footer class="flex flex-col w-full max-w-400 mx-auto -md:px-3 px-6 -md:mt-20 mt-40 -md:pb-20 pb-40">
+  <nav class="w-full grid -md:grid-cols-2 grid-cols-3 gap-x-5">
+    <ul class="flex col-span-1 md:space-x-5 -md:flex-col -md:space-y-5 w-fit">
       <li>
         <a href="https://github.com/CurtisWirtz" target="_blank" class="group">
           <svg width="48px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -50,28 +50,27 @@
       </li>
     </ul>
 
-    <ul class="flex flex-col">
-      <h3 class="uppercase text-base mb-2">This Site</h3>
-      <li class="">
-        <a href="https://github.com/CurtisWirtz/curtiswirtz.github.io"><span>Source Code</span></a>
+    <ul class="flex flex-col space-y-1 -md:space-y-2">
+      <h3 class="uppercase text-base mb-3">This Site</h3>
+      <li>
+        <a href="https://github.com/CurtisWirtz/curtiswirtz.github.io" class="hover:text-pank transition-all duration-500"><span>Source Code</span></a>
       </li>
-      <li class="">
-        <a href="#showcase"><span>Showcase</span></a>
+      <li>
+        <a href="#showcase" class="hover:text-pank transition-all duration-500"><span>Showcase</span></a>
       </li>
-      <li class="">
-        <a href="#about"><span>About</span></a>
+      <li>
+        <a href="#about" class="hover:text-pank transition-all duration-500"><span>About</span></a>
       </li>
-      <li class="">
-        <a href="#contact"><span>Contact</span></a>
+      <li>
+        <a href="#contact" class="hover:text-pank transition-all duration-500"><span>Contact</span></a>
       </li>
     </ul>
 
-    <div class="col-span-1 flex flex-col items-end">
-      <span class="mb-3">&#169; {{ site.time | date: "%Y" }} | Curtis Wirtz </span>
-      <a class="group relative flex" href="/" aria-label="Home">
+    <div class="-md:col-span-2 col-span-1 flex flex-col items-end">
+      <span class="flex md:mb-3 -md:order-2">&#169; {{ site.time | date: "%Y" }} | Curtis Wirtz </span>
+      <a class="group relative flex -md:order-1 -md:mb-3" href="/" aria-label="Home">
         <span class="sr-only">Home</span>
-        <span aria-hidden="true" class="mr-2 font-micro group-hover:text-pank trasition-all duration-500">&#169;</span>
-        <img src="/assets/images/curtis-icon.png" alt="Pixelated 'Curtis' logo." />
+        <img src="/assets/images/curtis-icon.png" alt="Pixelated 'CW' logo." />
         <img aria-hidden="true" class="sm:hidden absolute inset-0 z-10 opacity-0 group-hover:opacity-100 trasition-all duration-500" src="/assets/images/curtis-icon-pink.png" alt="Pixelated 'Curtis' logo." />
       </a>
     </div>
