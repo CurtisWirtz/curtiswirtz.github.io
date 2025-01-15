@@ -6,6 +6,7 @@ layout: default
 
 meta_title: Curtis Wirtz | Web Development
 meta_description: Hi. I'm Curtis, a web developer.
+meta_image: /assets/images/curtis-icon.png
 
 projects:
   - title: "Sigma Design"
