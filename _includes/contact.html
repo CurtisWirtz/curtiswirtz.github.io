@@ -1,0 +1,28 @@
+<section id="contact" class="flex flex-col w-full max-w-400 mx-auto -md:px-3 px-6 -md:pt-40 pt-80 -md:-mt-20 -mt-40 pb-20 -pb-16">
+  <header class="step max-auto flex flex-col justify-center items-center text-center">
+    <h1 class="shinebig mb-7">Contact</h1>
+  </header>
+  <form class="flex flex-col max-w-3xl mx-auto" action="https://formspree.io/f/mkggkpab" method="POST">
+    <fieldset class="flex w-full">
+      <legend class="h3 mb-5 block text-center">Let's bring your ideas to life.</legend>
+      <div class="w-full flex flex-col">
+        <div class="flex w-full space-x-5 mb-2">
+          <label class="flex flex-col mb-2 w-full">
+            <span class="uppercase text-micro tracking-widest mb-2 text-center">Name*</span>
+            <input class="contact-input text-black py-3 px-5 pixel-corners bg-base" type="name" name="name" required placeholder="Name" />
+          </label>
+          <label class="flex flex-col w-full">
+            <span class="uppercase text-micro tracking-widest mb-2 text-center">E-mail*</span>
+            <input class="contact-input text-black py-3 px-5 pixel-corners bg-base" type="email" name="email" required placeholder="E-Mail" />
+          </label>
+        </div>
+        <label class="flex flex-col mb-5">
+          <span class="uppercase text-micro tracking-widest mb-2 text-center">Message*</span>
+          <textarea class="contact-input text-black py-3 px-5 pixel-corners bg-base" name="message" required placeholder="Describe your project needs"></textarea>
+        </label>
+        <input type="text" name="_gotcha" style="display: none" />
+        <button class="bg-base hover:bg-pank transition-all duration-500 pixel-corners mt-3 pt-2 pb-1.5 px-6 w-fit self-center font-playertwo text-black" type="submit">Send</button>
+      </div>
+    </fieldset>
+  </form>
+</section>
