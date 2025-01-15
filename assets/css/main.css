@@ -328,3 +328,6 @@ body {
 .scroll-fade.active {
   opacity: 1;
 }
+#contact .contact-input::placeholder {
+  color: #000 !important;
+}
