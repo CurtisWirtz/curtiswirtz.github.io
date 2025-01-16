@@ -104,4 +104,35 @@ document.addEventListener("DOMContentLoaded", () => {
       loadMoreProjectsButton.style.display = "none";
     });
   }
+
+  // Button to copy email to clipboard in Contact section
+  async function copyToClipboard(textToCopy: string): Promise<void> {
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  }
+  const button = document.getElementById("copyEmailButton") as HTMLButtonElement;
+  button.addEventListener("click", () => {
+    copyToClipboard("curtiswirtz@gmail.com").then(() => {
+      // Change svg from document to checkmark, indicating completion
+      const documentSvg: HTMLElement | null = button.children[1] as HTMLElement;
+      const checkSvg: HTMLElement | null = button.children[2] as HTMLElement;
+      if (documentSvg) {
+        documentSvg.style.opacity = "0";
+        setTimeout(() => {
+          documentSvg.style.opacity = "1";
+        }, 1000);
+      }
+      if (checkSvg) {
+        checkSvg.style.display = "block";
+        checkSvg.style.opacity = "1";
+        setTimeout(() => {
+          checkSvg.style.opacity = "0";
+          checkSvg.style.display = "none";
+        }, 1000);
+      }
+    });
+  });
 });

@@ -4,7 +4,8 @@
     "module": "commonjs",
     "outDir": "assets/js/dist", // Output directory for compiled JavaScript
     "sourceMap": true,
-    "strict": true
+    "strict": true,
+    "lib": ["ES2015", "DOM"] // allow for Promises (ES2015 feature, specific use here is for clipboard copy of email)
   },
   "include": ["assets/js/**/*.ts"],
   "exclude": ["node_modules"]
