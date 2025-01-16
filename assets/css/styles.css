@@ -704,6 +704,10 @@ h5, .h5 {
   top: 0px;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -811,6 +815,14 @@ h5, .h5 {
 
 .mt-\[-11px\] {
   margin-top: -11px;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .block {
@@ -1181,6 +1193,10 @@ h5, .h5 {
   opacity: 0.8;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .blur-\[48px\] {
   --tw-blur: blur(48px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1202,6 +1218,18 @@ h5, .h5 {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-\[2s\] {
+  transition-duration: 2s;
+}
+
+.duration-\[2000ms\] {
+  transition-duration: 2000ms;
 }
 
 @font-face {
@@ -1799,6 +1827,14 @@ body {
 
   .-md\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .-md\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .-md\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 
   .-md\:text-\[12px\] {
