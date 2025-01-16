@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% if page.meta_title %}{{ page.meta_title }}{% endif %}</title>
     <meta name="description" content="{{ page.meta_description }}" />
+    <meta property="og:image" content="{{ page.meta_image }}" />
 
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="icon" href="/assets/images/favicon.ico" />
@@ -20,7 +21,7 @@
     </div>
 
     {% include navbar.html %} {% include hero.html %}
-    <main>{% include showcase.html %} {% include about.html %} {% include kicker.html %}</main>
+    <main>{% include showcase.html %} {% include about.html %} {% include contact.html %}</main>
     {% include footer.html %}
 
     <script type="module" src="/assets/js/dist/script.js"></script>
