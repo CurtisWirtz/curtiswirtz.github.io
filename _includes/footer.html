@@ -41,9 +41,9 @@
       </li>
       <li>
         <a href="mailto:curtiswirtz@gmail.com">
-          <span class="sr-only">E-mail</span>
+          <span class="sr-only">E-mail me!</span>
           <svg class="group" width="60px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.0 0.0 110.0 135.0">
-            <title>Icon titled "Envelope pixel" by Donchu from https://thenounproject.com/browse/icons/term/envelope-pixel/. CC BY 3.0 https://creativecommons.org/licenses/by/3.0/</title>
+            <title aria-hidden="true">Icon titled "Envelope pixel" by Donchu from https://thenounproject.com/browse/icons/term/envelope-pixel/. CC BY 3.0 https://creativecommons.org/licenses/by/3.0/</title>
             <path class="transition-all duration-500 group-hover:fill-pank" fill="#d1e4dd" d="m6.9648 83.094v-3.0742h-6.1484v-61.477h6.1484v-6.1484h86.07v6.1484h6.1484v61.477h-6.1484v6.1484h-86.07zm86.066-9.2227v-6.1484h-6.1484v-6.1484h6.1484v-36.883h-6.1484v-6.1484h-73.77v6.1484h-6.1484v36.883h6.1484v6.1484h-6.1484v12.297h86.07zm-79.918-15.371v-3.0742h12.297v-6.1484h6.1484v-6.1484h-6.1484v-6.1484h-6.1484v-6.1484l-3.0742 0.007813h-3.0742v-6.1484h6.1484v6.1484h6.1484v6.1484h6.1484v6.1484h6.1484v6.1484h6.1484v6.1484h12.297v-6.1484h6.1484v-6.1484h6.1484v-6.1484h6.1484v-6.1484h6.1484v-6.1484h6.1484v6.1484h-6.1484v6.1484h-6.1484v6.1484h-6.1484v6.1484h6.1484v6.1484h12.297v6.1484h-12.297v-6.1484h-6.1484v-6.1484h-6.1484v6.1484h-6.1484v6.1484h-12.297v-6.1484h-6.1484v-6.1484h-6.1484v6.1484h-6.1484v6.1484l-6.1484-0.003906h-6.1484z" />
           </svg>
         </a>
@@ -51,7 +51,7 @@
     </ul>
 
     <ul class="flex flex-col space-y-1 -md:space-y-2">
-      <h3 class="uppercase text-base mb-3">This Site</h3>
+      <h3 class="uppercase text-base mb-3" tabindex="0">This Site</h3>
       <li>
         <a href="https://github.com/CurtisWirtz/curtiswirtz.github.io" class="hover:text-pank transition-all duration-500"><span>Source Code</span></a>
       </li>
@@ -67,9 +67,8 @@
     </ul>
 
     <div class="-md:col-span-2 col-span-1 flex flex-col items-end">
-      <span class="flex md:mb-3 -md:order-2">&#169; {{ site.time | date: "%Y" }} | Curtis Wirtz </span>
-      <a class="group relative flex -md:order-1 -md:mb-3" href="/" aria-label="Home">
-        <span class="sr-only">Home</span>
+      <span class="flex md:mb-3 -md:order-2" tabindex="0">&#169; {{ site.time | date: "%Y" }} | Curtis Wirtz </span>
+      <a class="group relative flex -md:order-1 -md:mb-3" href="/" aria-label="Link to the top of this page.">
         <img src="/assets/images/curtis-icon.png" alt="Pixelated 'CW' logo." />
         <img aria-hidden="true" class="sm:hidden absolute inset-0 z-10 opacity-0 group-hover:opacity-100 trasition-all duration-500" src="/assets/images/curtis-icon-pink.png" alt="Pixelated 'Curtis' logo." />
       </a>
