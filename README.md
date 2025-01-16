@@ -4,7 +4,7 @@ My simple portfolio website. Generated with Jekyll.
 
 ### For local development:
 
-# Ruby version 3.3.4 and Node 18.20.5:
+#### Ruby version 3.3.4 and Node 18.20.5:
 
 In root directory: (Assuming all requirements are met for a Ruby and Node.js environment)
 
