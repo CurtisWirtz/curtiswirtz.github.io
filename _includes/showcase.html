@@ -50,6 +50,7 @@
       </div>
     </div>
   </article>
-  {% endfor %}
-  <button id="loadMoreProjects" class="relative z-10 bg-base hover:bg-pank transition-all duration-500 pixel-corners pt-2 pb-1.5 px-6 w-fit mx-auto font-playertwo text-black -md:mb-20 mb-20">Load More</button>
+  {% if forloop.index == 3 %}
+  <button id="loadMoreProjects" class="bg-base hover:bg-pank transition-all duration-500 pixel-corners pt-2 pb-1.5 px-6 w-fit mx-auto font-playertwo text-black -md:mb-20 mb-40">Load More</button>
+  {% endif %} {% endfor %}
 </section>
