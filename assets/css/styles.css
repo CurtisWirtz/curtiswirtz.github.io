@@ -1484,7 +1484,7 @@ body {
   justify-content: space-around;
   min-width: 100%;
   gap: var(--gap);
-  animation: marquee 30s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
@@ -1560,24 +1560,14 @@ body {
   background-color: rgb(239 126 247 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-base:hover {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.hover\:text-\[\#d1e4dd\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(209 228 221 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-pank:hover {
   --tw-text-opacity: 1;
   color: rgb(239 126 247 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-base:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 228 221 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-\[\#d1e4dd\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 228 221 / var(--tw-text-opacity, 1));
 }
 
 .group:hover .group-hover\:translate-x-2 {
