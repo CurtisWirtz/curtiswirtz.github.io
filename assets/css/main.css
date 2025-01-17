@@ -165,21 +165,19 @@ body {
   -webkit-background-clip: text;
   text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
-.shinebig {
+/* glow effect on section h1s */
+.warm-glow {
+  font-size: 5rem;
+  color: #d1e4dd;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #d1e4dd, #ef7ef7);
-  -webkit-background-clip: text;
-  backgrtound-clip: text;
-  color: transparent;
-
-  background-size: 300%;
-  background-position: -100px;
-
-  -webkit-animation: gradientText 2s infinite alternate-reverse;
+  animation: glow 1s infinite alternate;
 }
-@keyframes gradientText {
-  to {
-    background-position: 100%;
+@keyframes glow {
+  0% {
+    color: #d1e4dd;
+  }
+  100% {
+    color: #ef7ef7;
   }
 }
 
