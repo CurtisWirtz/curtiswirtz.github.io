@@ -121,9 +121,18 @@ document.addEventListener("DOMContentLoaded", function () {
     var listItems = document.querySelectorAll(".list-group article");
     if (loadMoreProjectsButton) {
         loadMoreProjectsButton.addEventListener("click", function () {
-            listItems.forEach(function (item) {
+            listItems.forEach(function (item, idx) {
                 item.classList.remove("hidden");
             });
+            // focus on the 5th project after loading, since we load 4 initially
+            console.log("listItems[4]:", listItems[4]);
+            var targetItem = listItems[4].children[1].firstElementChild;
+            console.log("targetItem:", targetItem);
+            if (targetItem) {
+                // Check if element exists before focusing
+                targetItem.focus();
+            }
+            // hide button after all projects appear, and tab focus goes to the next project
             loadMoreProjectsButton.style.display = "none";
         });
     }

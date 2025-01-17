@@ -95,12 +95,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Load the rest of the example Showcase projects when clicking the Load More button
   const loadMoreProjectsButton: HTMLElement | null = document.getElementById("loadMoreProjects");
-  const listItems: NodeListOf<Element> | null = document.querySelectorAll(".list-group article");
+  const listItems: NodeListOf<HTMLElement> | null = document.querySelectorAll(".list-group article");
   if (loadMoreProjectsButton) {
     loadMoreProjectsButton.addEventListener("click", () => {
-      listItems.forEach((item) => {
+      listItems.forEach((item, idx) => {
         item.classList.remove("hidden");
       });
+      // focus on the 5th project after loading, since we load 4 initially
+      console.log("listItems[4]:", listItems[4]);
+      const targetItem: HTMLElement | null = listItems[4].children[1].firstElementChild as HTMLElement;
+      console.log("targetItem:", targetItem);
+      if (targetItem) {
+        // Check if element exists before focusing
+        targetItem.focus();
+      }
+      // hide button after all projects appear, and tab focus goes to the next project
       loadMoreProjectsButton.style.display = "none";
     });
   }
