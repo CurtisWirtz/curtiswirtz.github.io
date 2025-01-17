@@ -44,7 +44,7 @@ projects:
     image: "/assets/images/imperialyeast.jpeg"
     url: "https://www.imperialyeast.com/"
   - title: "Who Killed Mia?"
-    description: "A murder mystery game with a QR Code accessible app to help players crack the case. The timeline was super-tight, but met. Sold at Walmarts and Targets nationwide."
+    description: "A murder mystery game with a QR Code accessible app to help players crack the case. Sold at Walmart and Target nationwide."
     tech:
       - "11ty"
       - "Nunjucks"
