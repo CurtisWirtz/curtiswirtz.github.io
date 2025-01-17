@@ -9,7 +9,7 @@
   </header>
 
   {% for project in page.projects %}
-  <article class="step project flex -md:flex-col -md:mb-20 mb-40 {% if forloop.index > 3 %}hidden{% endif %}">
+  <article class="step project flex -md:flex-col -md:mb-20 mb-40 {% if forloop.index > 4 %}hidden{% endif %}">
     {% if project.title %}
     <h2 class="mb-5 mx-auto text-center md:hidden" tabindex="0">{{project.title}}</h2>
     {% endif %}
@@ -50,7 +50,6 @@
       </div>
     </div>
   </article>
-  {% if forloop.index == 3 %}
+  {% endfor %}
   <button id="loadMoreProjects" class="bg-base hover:bg-pank transition-all duration-500 pixel-corners pt-2 pb-1.5 px-6 w-fit mx-auto font-playertwo text-black -md:mb-20 mb-40">Load More</button>
-  {% endif %} {% endfor %}
 </section>
