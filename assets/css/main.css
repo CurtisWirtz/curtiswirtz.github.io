@@ -167,7 +167,6 @@ body {
 }
 /* glow effect on section h1s */
 .warm-glow {
-  font-size: 5rem;
   color: #d1e4dd;
   text-transform: uppercase;
   animation: glow 3s infinite alternate-reverse;

@@ -561,7 +561,7 @@ body {
 h1, .h1 {
   font-family: "Press Start 2P";
   font-weight: 500;
-  font-size: clamp(1.75rem, 3.75vw, 3rem);
+  font-size: clamp(2rem, 3.75vw, 3rem);
   line-height: 1.1;
 }
 
@@ -1360,7 +1360,6 @@ body {
 /* glow effect on section h1s */
 
 .warm-glow {
-  font-size: 5rem;
   color: #d1e4dd;
   text-transform: uppercase;
   animation: glow 3s infinite alternate-reverse;
