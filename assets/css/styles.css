@@ -1363,7 +1363,7 @@ body {
   font-size: 5rem;
   color: #d1e4dd;
   text-transform: uppercase;
-  animation: glow 1s infinite alternate;
+  animation: glow 3s infinite alternate-reverse;
 }
 
 @keyframes glow {
