@@ -44,7 +44,7 @@ projects:
     image: "/assets/images/imperialyeast.jpeg"
     url: "https://www.imperialyeast.com/"
   - title: "Who Killed Mia?"
-    description: "A murder mystery game with a QR Code accessible app to help players crack the case. Sold at Walmart and Target nationwide."
+    description: "A murder mystery game with a QR Code accessible app to help players crack the case. Sold at Walmart and Target locations nationwide."
     tech:
       - "11ty"
       - "Nunjucks"
@@ -54,7 +54,7 @@ projects:
     image: "/assets/images/whokilledmia.jpeg"
     url: "https://www.whokilledmia.com/"
   - title: "Hemingway Land Company"
-    description: "An interface for buying and selling remote parcels of land. Geographical map navigation and design. Emphasis on beautiful photography, thus image optimization is key."
+    description: "An interactive listing for buying and selling parcels of land. Geographical map navigation and design. Emphasis on beautiful photography, thus image optimization is key."
     tech:
       - "11ty"
       - "Nunjucks"
