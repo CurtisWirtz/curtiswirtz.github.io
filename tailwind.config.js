@@ -36,7 +36,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        h1: fontSizeClamp(2, 3), // 32px - 48px
+        h1: fontSizeClamp(2.25, 3), // 36px - 48px
         h2: fontSizeClamp(1.5, 2.25), // 24px - 36px
         h3: fontSizeClamp(1.25, 2), // 20px - 32px
         h4: fontSizeClamp(1.125, 1.5), // 18px - 24px
