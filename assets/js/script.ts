@@ -71,14 +71,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
-    const scrollPercentage = scrollPosition / (documentHeight - windowHeight) / 2; // The last number we divide it by slows how quickly the haze appears
+    const scrollPercentage = scrollPosition / (documentHeight - windowHeight) / 2; // We ultimately divide it. The more you divide it, the more it slows how quickly the haze appears. (example: dividing by 3 only allows the maximum opacity to be ~33%, it appears much darker/subtle)
 
     const fadeElements = document.querySelectorAll<HTMLElement>(".scroll-fade");
 
     fadeElements.forEach((element, index) => {
       let maxOpacity = 1;
 
-      // maximum opacities
+      // maximum opacities for each of the light effects in the background
       if (index === 0) {
         maxOpacity = 0.4;
       } else if (index === 1) {
