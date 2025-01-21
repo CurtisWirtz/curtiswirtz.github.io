@@ -817,6 +817,14 @@ h5, .h5 {
   margin-top: -11px;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
