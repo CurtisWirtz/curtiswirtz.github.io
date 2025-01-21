@@ -286,17 +286,6 @@ body {
   }
 }
 
-/* Fade to black on X edges of marquee */
-.bg-gradient-to-r {
-  opacity: 1;
-  width: 10%;
-}
-
-.bg-gradient-to-l {
-  opacity: 1;
-  width: 10%;
-}
-
 /* Project Image zoom */
 .zooms {
   animation: zooms 10s ease-in-out infinite;
