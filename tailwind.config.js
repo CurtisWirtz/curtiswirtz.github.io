@@ -96,12 +96,6 @@ module.exports = {
           fontWeight: theme("fontWeight.normal"),
           fontSize: theme("fontSize.h4"),
           lineHeight: "1.2"
-        },
-        "h5, .h5": {
-          fontFamily: theme("fontFamily.playertwo"),
-          fontWeight: theme("fontWeight.bold"),
-          fontSize: theme("fontSize.h5"),
-          lineHeight: "1.2"
         }
       });
     })
