@@ -70,7 +70,7 @@ module.exports = {
     require("@tailwindcss/typography"),
     plugin(function ({ addBase, theme }) {
       addBase({
-        body: {
+        "body, p": {
           fontSize: theme("fontSize.body")
         },
         "h1, .h1": {
