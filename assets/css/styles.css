@@ -884,6 +884,10 @@ h4, .h4 {
   max-width: 100rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1566,10 +1570,6 @@ body {
 
   .-sm\:text-left {
     text-align: left;
-  }
-
-  .-sm\:indent-10 {
-    text-indent: 2.5rem;
   }
 
   .-sm\:indent-5 {
