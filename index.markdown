@@ -78,7 +78,7 @@ projects:
     image: "/assets/images/compris.jpeg"
     url: "https://www.comprisvineyard.com/"
   - title: "Brown Hope"
-    description: "Vibrantly colored layouts that bring a smile to my face. Tailored to the inspiring work that they do."
+    description: "Vibrantly colored layouts that bring a smile to my face. Tailored to the important and inspiring work that they do."
     tech:
       - "Node.js"
       - "React"
@@ -87,4 +87,14 @@ projects:
       - "Tailwind"
     image: "/assets/images/brownhope.jpeg"
     url: "https://www.brownhope.org/"
+  - title: "Membership Puzzle Project"
+    description: "A wordpress site that shines. Then, I built a WP plugin from scratch to make the site available in four languages."
+    tech:
+      - "WordPress"
+      - "PHP"
+      - "Javascript"
+      - "Kinsta"
+      - "gettext"
+    image: "/assets/images/puzzleproject.jpeg"
+    url: "https://membershipguide.org/"
 ---
