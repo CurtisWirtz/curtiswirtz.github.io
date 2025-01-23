@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("targetItem:", targetItem);
             if (targetItem) {
                 // Check if element exists before focusing
-                targetItem.focus();
+                targetItem.focus({ preventScroll: true });
             }
             // hide button after all projects appear, and tab focus goes to the next project
             loadMoreProjectsButton.style.display = "none";
