@@ -125,9 +125,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 item.classList.remove("hidden");
             });
             // focus on the 5th project after loading, since we load 4 initially
-            console.log("listItems[4]:", listItems[4]);
+            // console.log("listItems[4]:", listItems[4]);
             var targetItem = listItems[4].children[1].firstElementChild;
-            console.log("targetItem:", targetItem);
+            // console.log("targetItem:", targetItem);
             if (targetItem) {
                 // Check if element exists before focusing
                 targetItem.focus({ preventScroll: true });
