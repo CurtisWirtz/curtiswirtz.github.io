@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /assets/pdf/Curtis_Wirtz_Resume_2025.pdf
